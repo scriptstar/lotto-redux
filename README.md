@@ -10,7 +10,7 @@ The U.K [National Lottery](https://www.national-lottery.co.uk/) called Lotto wil
 
 ## Demo:
 
-<img src="https://github.com/scriptstar/lotto/blob/master/demo.gif" alt="Lotto random number generator app" style="width: 100px;" />
+<img src="https://github.com/scriptstar/lotto/blob/master/demo.gif" alt="Lotto random number generator app" style="width: 50px; height: 50px;" />
 
 
 ## Technologies used:
