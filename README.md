@@ -19,24 +19,14 @@ The U.K [National Lottery](https://www.national-lottery.co.uk/) called Lotto wil
 
 ```sh
 git clone https://github.com/scriptstar/lotto
-
 cd lotto
-
 npm install
-
 cd client
-
 npm install
-
 cd ..
-
 npm start
-
 cd client
-
 npm start
-
-</code>
 ```
 
 Feel free to use this for your own purpose.
