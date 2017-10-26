@@ -8,6 +8,10 @@ This example is built on using [create-react-app](https://github.com/facebookinc
 
 The U.K [National Lottery](https://www.national-lottery.co.uk/) called Lotto will be played every Wednesday and Saturday. In order to play, you need to predict 6 numbers between 1 - 59. This program will generate 6 random numbers for you so that you can buy with no pain of predicting or thinking. Don't hurt your brain. Use the [Lotto](https://pure-fjord-71507.herokuapp.com/uk-lotto) tab to see generated numbers exclusively for you. As a bonus, we thrown [Euro million](https://pure-fjord-71507.herokuapp.com/euro-million) lottery predictor too!
 
+## Demo:
+![Lotto random number generator app](https://github.com/scriptstar/lotto/blob/master/demo.gif "Lotto random number generator app")
+
+
 ## Technologies used:
 
 *   React
