@@ -1,9 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
-import { router } from 'react-router';
+import React from "react";
+import { render } from "react-dom";
+import "./index.css";
+import Header from "./Header.js";
+import App from "./App";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+const router = (
+  <Router>
+    <div>
+      <Route path="/" component={Header} />
+      <Route path="/uk-lotto" component={App} />
+      <Route path="/euro-million" component={App} />
+    </div>
+  </Router>
+);
+
+render(router, document.getElementById("root"));

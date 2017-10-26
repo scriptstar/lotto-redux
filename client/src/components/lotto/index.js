@@ -8,21 +8,35 @@ const Fade = ({ children, ...props }) =>
     {children}
   </CSSTransition>;
 
+const styles = {
+  textDecoration: "underline",
+  textDecorationColor: '#FF6C6C'
+};
+
 const Lotto = props => {
   const { lottonumbers } = props;
   return (
-    <div className = "App">
+    <div className="App">
       {/* Render the numbers if we have them */}
       {lottonumbers.length
         ? <div>
-            <h1>Random Lotto Number Generator!</h1>
+            <h1>
+              Random <span style={styles}>
+                {props.location.toUpperCase()}
+              </span> {" "}
+              Number Generator!
+            </h1>
             <TransitionGroup className="todo-list">
               {lottonumbers.map((lottonumber, index) => {
                 return (
                   <Fade key={lottonumber}>
                     <div key={index}>
                       Row {index + 1} -{" "}
-                      <SingleRow lottonumber={lottonumber} key={index} />
+                      <SingleRow
+                        lottonumber={lottonumber}
+                        key={index}
+                        location={props.location}
+                      />
                     </div>
                   </Fade>
                 );

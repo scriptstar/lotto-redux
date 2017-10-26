@@ -13,18 +13,24 @@ class App extends Component {
     this.getLottoNumbers();
   }
 
+  getLocationDetails = () => {
+    const location = this.props.location.pathname.substring(1);
+    return location === "euro-million" ? "euro" : "lotto";
+  }
+
   getLottoNumbers = () => {
-    // Get the randomly generated lotto numbers and store them in state
-    fetch("/api/lotto")
+    const whichRoute = this.getLocationDetails();
+    fetch(`/api/${whichRoute}`)
       .then(res => res.json())
       .then(lottonumbers => this.setState({ lottonumbers }));
-  };
+  }
 
   render() {
     return (
       <Lotto
         {...this.state}
         getLottoNumbers={this.getLottoNumbers.bind(this)}
+        location = {this.getLocationDetails()}
       />
     );
   }
