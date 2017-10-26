@@ -1,7 +1,6 @@
 import React from "react";
 import SingleRow from "./SingleRow";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
-import "../../App.css";
 
 const Fade = ({ children, ...props }) =>
   <CSSTransition {...props} timeout={500} classNames="fade">

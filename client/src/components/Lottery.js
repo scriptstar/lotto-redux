@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Lotto from "./components/lotto/index";
+import Lotto from "./lotto/Lotto";
 
-class App extends Component {
+class Lottery extends Component {
   constructor(props) {
     super(props);
     // Initialize state
@@ -20,6 +20,7 @@ class App extends Component {
 
   getLottoNumbers = () => {
     const whichRoute = this.getLocationDetails();
+    console.log('whichRoute', whichRoute);
     fetch(`/api/${whichRoute}`)
       .then(res => res.json())
       .then(lottonumbers => this.setState({ lottonumbers }));
@@ -36,4 +37,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Lottery;

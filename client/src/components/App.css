@@ -1,0 +1,152 @@
+.App {
+  text-align: center;
+  /*font-family: "Courier New", monospace;*/
+}
+
+h1 {
+  font-size: 38px;
+}
+
+ul.header li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+
+ul.header {
+  width:100%;
+  text-align:center;
+  background-color: #FFF;
+  padding: 0;
+}
+
+ul.header li a {
+  text-align: center;
+  color: #B9B9B9;
+  text-decoration: none;
+  padding: 20px;
+  min-width: 66px;
+  display: inline-block;
+  -webkit-transition: all 150ms ease-in;
+  transition: all 150ms ease-in;
+}
+
+ul.header li a.active {
+  font-weight: bold;
+  background-color: #FF6C6C;
+  color: #000;
+}
+
+.tinysquare {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 15px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
+  border: 1px solid rgba(0, 0, 0, .2);
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+  /*-webkit-animation-iteration-count: infinite;*/
+}
+
+.getmore {
+  font-size: 32px;
+  font-weight: bold;
+  border: 0px solid #000;
+  background-color: #FF6C6C;
+  padding: 10px 25px;
+  margin: 25px;
+}
+
+/*.getmore:hover {
+  background-color: #FF6C6C;
+} */
+
+.getmore:active {
+  outline: none; 
+}
+
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0.01;
+  transition: opacity ease-in;
+}
+
+.star {
+  background-color: #D3D3D3;
+}
+
+.content {
+  background-color: #FFF;
+  padding: 20px;
+  -webkit-box-shadow: 0px 20px 70px -16px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 20px 70px -16px rgba(0,0,0,0.1);
+  box-shadow: 0px 20px 70px -16px rgba(0,0,0,0.1);
+  border-radius: 3px;
+}
+
+/* Futuristic 2017 card UI styles */
+.content, ul.header {
+  -webkit-box-shadow: 0px 20px 70px -16px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 20px 70px -16px rgba(0,0,0,0.1);
+  box-shadow: 0px 20px 70px -16px rgba(0,0,0,0.1);
+}
+
+.content, ul.header, ul.header li a {
+  border-radius: 3px;
+}
+
+.content h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.content li {
+  margin-bottom: 10px;
+}
+
+.content a {
+  text-decoration: none;  /* Strips browser-default underline */
+  color: currentColor; /* Strips browser-default blue */
+  border-bottom: 2px solid currentColor;
+  padding-bottom: 1px;
+  -webkit-transition: all 250ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition:         all 250ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.content a:hover {
+  color: #FF6C6C;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #FF6C6C;
+}
+
+.content .link-expand a:after {
+  content:' ➡'
+}
+
+.content .link-expand a.active {
+  border: 0;
+}
+
+.content .link-expand a.active:hover {
+  color: currentColor;
+  cursor: default;
+}
+
+.content .link-expand a.active:after {
+  content:'';
+}
