@@ -49,6 +49,9 @@ ul.header li a.active {
   -webkit-animation-duration: 1s;
   -webkit-animation-delay: 1s;
   /*-webkit-animation-iteration-count: infinite;*/
+  /*Added standard properties to improve browser compatibility*/
+  animation-duration: 1s;
+  animation-delay: 1s;
 }
 
 .getmore {
