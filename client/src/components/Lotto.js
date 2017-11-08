@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Lotto from "./lotto/Lotto";
+import UKLotto from "./lotto/Lotto";
 
-class Lottery extends Component {
+class Lotto extends Component {
   constructor(props) {
     super(props);
     // Initialize state
@@ -28,7 +28,7 @@ class Lottery extends Component {
 
   render() {
     return (
-      <Lotto
+      <UKLotto
         {...this.state}
         getLottoNumbers={this.getLottoNumbers.bind(this)}
         location = {this.getLocationDetails()}
@@ -37,4 +37,4 @@ class Lottery extends Component {
   }
 }
 
-export default Lottery;
+export default Lotto;

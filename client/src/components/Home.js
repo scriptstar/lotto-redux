@@ -31,13 +31,13 @@ const Home = () =>
     generated numbers exclusively for you. As a bonus, we thrown{" "}
     <a href="./euro-million" alt="Euro Million">Euro million</a> lottery
     predictor too!
-    <p>
+    <div>
       <h2>Technologies used:</h2>
       <li> React </li>
       <li> React Router v4 </li>
       <li> Express </li>
       <li> ES6 </li>
-    </p>
+    </div>
     <p>
       {" "}Feel free to{" "}
       <a
